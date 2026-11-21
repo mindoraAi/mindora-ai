@@ -1,0 +1,443 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Mindora AI is an African AI technology group headquartered in Mombasa, Kenya, advancing AI data services, education and African-language intelligence.">
+<title>Mindora AI | African AI Technology Group</title>
+<style>
+:root {
+  --navy:#081426;
+  --navy2:#102846;
+  --blue:#168cba;
+  --cyan:#43d6d0;
+  --gold:#e6b85c;
+  --white:#ffffff;
+  --light:#f3f7fb;
+  --muted:#aebfd1;
+}
+* {box-sizing:border-box;scroll-behavior:smooth}
+body {
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  color:#17263b;
+  line-height:1.6;
+}
+a {text-decoration:none}
+header {
+  background:var(--navy);
+  color:white;
+  position:sticky;
+  top:0;
+  z-index:10;
+  border-bottom:2px solid var(--gold);
+}
+nav {
+  max-width:1200px;
+  margin:auto;
+  padding:15px 24px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+.logo {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:23px;
+  font-weight:900;
+  letter-spacing:1px;
+  color:white;
+}
+.logo-mark {
+  width:43px;height:43px;
+  border-radius:12px;
+  background:linear-gradient(135deg,var(--cyan),#1264cf);
+  color:var(--navy);
+  display:grid;
+  place-items:center;
+  font-size:25px;
+  font-weight:900;
+}
+.logo span {color:var(--cyan)}
+.navlinks {display:flex;gap:18px;flex-wrap:wrap}
+.navlinks a {
+  color:#e0e9f3;
+  font-size:13px;
+  font-weight:bold;
+}
+.navlinks a:hover {color:var(--cyan)}
+.hero {
+  background:
+    radial-gradient(ellipse at 80% 25%,#164d78 0%,transparent 45%),
+    linear-gradient(120deg,#071426,#102c4c);
+  color:white;
+  padding:95px 24px 110px;
+}
+.hero-inner {
+  max-width:1150px;
+  margin:auto;
+}
+.eyebrow {
+  color:var(--cyan);
+  font-size:12px;
+  font-weight:bold;
+  letter-spacing:3px;
+  text-transform:uppercase;
+}
+.hero h1 {
+  font-size:clamp(38px,6vw,66px);
+  line-height:1.12;
+  max-width:850px;
+  margin:20px 0;
+}
+.hero h1 span {color:var(--gold)}
+.hero p {
+  max-width:680px;
+  color:#c8d8e8;
+  font-size:18px;
+}
+.tagline {
+  font-size:22px;
+  font-style:italic;
+  color:var(--cyan);
+  margin-top:25px;
+}
+.buttons {
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  margin-top:30px;
+}
+.btn {
+  display:inline-block;
+  padding:13px 22px;
+  border-radius:8px;
+  font-weight:bold;
+  background:var(--gold);
+  color:#101d2c;
+}
+.btn-outline {
+  border:1px solid var(--cyan);
+  color:white;
+  background:transparent;
+}
+section {padding:75px 24px}
+.container {max-width:1150px;margin:auto}
+.section-title {
+  font-size:34px;
+  color:var(--navy);
+  margin:8px 0;
+}
+.section-intro {
+  color:#66778b;
+  max-width:700px;
+  margin-bottom:32px;
+}
+.kicker {
+  color:var(--blue);
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-size:12px;
+  font-weight:bold;
+}
+.divisions {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+.card {
+  padding:28px;
+  border-radius:15px;
+  background:white;
+  border:1px solid #e1e8f0;
+  box-shadow:0 8px 25px #1028460c;
+}
+.card h3 {color:var(--navy);font-size:21px}
+.card p {color:#68798d;font-size:14px}
+.card .symbol {
+  font-size:32px;
+  color:var(--blue);
+}
+.card a {
+  color:var(--blue);
+  font-weight:bold;
+  font-size:14px;
+}
+.academy {border-top:4px solid #20a86a}
+.data {border-top:4px solid #168cba}
+.language {border-top:4px solid #8150c9}
+.dark {
+  background:var(--navy);
+  color:white;
+}
+.dark .section-title {color:white}
+.dark .section-intro {color:var(--muted)}
+.vision-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:35px;
+  align-items:center;
+}
+.vision-grid h3 {font-size:25px;color:var(--cyan)}
+.values {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+}
+.value {
+  background:#ffffff0c;
+  padding:18px;
+  border:1px solid #ffffff1c;
+  border-radius:12px;
+}
+.value strong {color:var(--gold)}
+.innovation {
+  background:var(--light);
+}
+.pill {
+  display:inline-block;
+  padding:7px 13px;
+  border-radius:30px;
+  background:#e5f5f5;
+  color:#087d83;
+  font-size:12px;
+  font-weight:bold;
+  margin:4px;
+}
+.investor {
+  background:linear-gradient(120deg,#102846,#081426);
+  color:white;
+  text-align:center;
+}
+.investor h2 {font-size:34px}
+.investor p {
+  color:#c4d4e5;
+  max-width:700px;
+  margin:15px auto 28px;
+}
+.contact-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+.contact-box {
+  padding:25px;
+  background:white;
+  border:1px solid #e2eaf2;
+  border-radius:13px;
+}
+footer {
+  background:#050e1c;
+  color:#aebfd1;
+  text-align:center;
+  padding:35px 20px;
+}
+footer strong {color:var(--cyan)}
+footer a {color:var(--gold)}
+@media(max-width:850px) {
+  nav {align-items:flex-start;flex-direction:column}
+  .navlinks {gap:12px}
+  .divisions {grid-template-columns:1fr}
+  .vision-grid,.contact-grid {grid-template-columns:1fr}
+  .hero {padding:65px 24px 85px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+  <a class="logo" href="#home">
+    <div class="logo-mark">M</div>
+    MINDORA <span>AI</span>
+  </a>
+  <div class="navlinks">
+    <a href="#home">Home</a>
+    <a href="#divisions">Our Divisions</a>
+    <a href="#about">About Us</a>
+    <a href="#innovation">Innovation</a>
+    <a href="#investors">Investors</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+ <div class="hero-inner">
+  <div class="eyebrow">An African AI Technology Group</div>
+  <h1>Building <span>African AI Talent</span>, Powering Global AI Systems.</h1>
+  <p>
+   We are building an African AI technology group focused on
+   intelligent data services, practical AI education and the
+   advancement of African-language technology.
+  </p>
+  <div class="tagline">African talent. Global AI impact.</div>
+  <div class="buttons">
+   <a class="btn" href="#divisions">Explore Our Divisions →</a>
+   <a class="btn btn-outline" href="#about">Discover Mindora</a>
+  </div>
+ </div>
+</section>
+
+<section id="divisions">
+ <div class="container">
+  <div class="kicker">Our Business</div>
+  <h2 class="section-title">Three divisions. One vision.</h2>
+  <p class="section-intro">
+   Mindora AI brings together technology services, education
+   and language innovation to contribute to the global AI ecosystem.
+  </p>
+  <div class="divisions">
+
+   <div class="card data">
+    <div class="symbol">◈</div>
+    <h3>Mindora AI Data Solutions</h3>
+    <p>Delivering human-powered AI data services to international
+    companies, researchers and technology organisations.</p>
+    <span class="pill">Data Annotation</span>
+    <span class="pill">Transcription</span>
+    <span class="pill">AI Evaluation</span>
+    <span class="pill">Quality Assurance</span>
+    <p><a href="#contact">Partner with us →</a></p>
+   </div>
+
+   <div class="card academy">
+    <div class="symbol">▤</div>
+    <h3>Mindora AI Academy</h3>
+    <p>Making artificial intelligence knowledge accessible
+    through practical training, learning resources and
+    professional development.</p>
+    <span class="pill">AI Courses</span>
+    <span class="pill">AI Literacy</span>
+    <span class="pill">Business Training</span>
+    <span class="pill">Digital Skills</span>
+    <p><a href="#contact">Explore learning →</a></p>
+   </div>
+
+   <div class="card language">
+    <div class="symbol">⌁</div>
+    <h3>Mindora Language Intelligence</h3>
+    <p>Advancing African-language representation through
+    responsible language data development, research and
+    technology partnerships.</p>
+    <span class="pill">Kiswahili AI</span>
+    <span class="pill">Language Data</span>
+    <span class="pill">Speech Research</span>
+    <span class="pill">Localization</span>
+    <p><a href="#innovation">Discover innovation →</a></p>
+   </div>
+
+  </div>
+ </div>
+</section>
+
+<section class="dark" id="about">
+ <div class="container vision-grid">
+  <div>
+   <div class="kicker">Who We Are</div>
+   <h2 class="section-title">Rooted in Africa. Built for the world.</h2>
+   <h3>Our vision</h3>
+   <p>To become a leading African AI technology group,
+   empowering people, businesses and communities through
+   innovative and responsible AI solutions.</p>
+   <h3>Our mission</h3>
+   <p>To develop African AI talent, deliver reliable AI data
+   services and advance the representation of African
+   languages in the digital world.</p>
+  </div>
+  <div class="values">
+   <div class="value"><strong>01</strong><br>Innovation driven</div>
+   <div class="value"><strong>02</strong><br>African talent</div>
+   <div class="value"><strong>03</strong><br>Global impact</div>
+   <div class="value"><strong>04</strong><br>Responsible AI</div>
+  </div>
+ </div>
+</section>
+
+<section class="innovation" id="innovation">
+ <div class="container">
+  <div class="kicker">Research and Development</div>
+  <h2 class="section-title">Advancing African AI innovation.</h2>
+  <p class="section-intro">
+   We aim to contribute to more inclusive AI systems by
+   developing African-language resources, supporting
+   multilingual research and nurturing local talent.
+  </p>
+  <div class="divisions">
+   <div class="card">
+    <h3>Language Resources</h3>
+    <p>Explore responsible approaches to African-language
+    data collection, documentation and evaluation.</p>
+   </div>
+   <div class="card">
+    <h3>AI Research Partnerships</h3>
+    <p>Collaborate with research institutions, language
+    communities and technology developers.</p>
+   </div>
+   <div class="card">
+    <h3>Future Technologies</h3>
+    <p>Develop new opportunities in speech, language
+    intelligence and culturally relevant AI.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="investor" id="investors">
+ <div class="container">
+  <div class="kicker">Partnerships and Investment</div>
+  <h2>Help build Africa's AI future.</h2>
+  <p>
+   We welcome conversations with investors, technology
+   companies, research institutions and strategic partners
+   interested in the growth of African AI capabilities.
+  </p>
+  <a class="btn" href="#contact">Explore Partnership Opportunities →</a>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="container">
+  <div class="kicker">Connect With Us</div>
+  <h2 class="section-title">Let's build something meaningful.</h2>
+  <p class="section-intro">
+   Mindora AI is building from Mombasa, Kenya, with a
+   global outlook and a commitment to African innovation.
+  </p>
+  <div class="contact-grid">
+   <div class="contact-box">
+    <h3>Our Headquarters</h3>
+    <p><strong>Location:</strong> Mombasa, Kenya</p>
+    <p><strong>Market:</strong> Kenya and international markets</p>
+    <p><strong>Focus:</strong> AI services, education and language intelligence</p>
+   </div>
+   <div class="contact-box">
+    <h3>Business Enquiries</h3>
+    <p>For client opportunities, investment discussions,
+    research and strategic partnerships, contact the
+    Mindora AI team.</p>
+    <p><strong>Email:</strong> Official contact address to be announced.</p>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <strong>MINDORA AI</strong>
+ <p>An African AI Technology Group</p>
+ <p>African talent. Global AI impact.</p>
+ <p>Headquartered in Mombasa, Kenya.</p>
+ <small>© <span id="year"></span> Mindora AI. All rights reserved.</small>
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+</script>
+</body>
+</html>
